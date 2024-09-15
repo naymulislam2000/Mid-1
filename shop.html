@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> -->
+    
+    
+    <!-- =============== css ================== -->
+     <link rel="stylesheet" href="./css/index.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css"><!--for google css link-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>World Defence</title>
+</head>
+<body>
+    <!-- =============== HEADER =============== -->
+    <header class="header">
+        <div class="header-top">
+            <div class="header_container container">
+                <div class="header-contact">
+                    <span>+1 423-745-6534</span>
+
+                    
+                    <p class="header-alert-news">Super Value Deals - Save more with coupons</p>
+                    <a href="login.html" class="header-top-action">Log In / Sing Up</a>
+                </div>
+            </div>
+        </div>
+        <nav class="nav container">
+            <a href="index.html" class="nav-logo">
+                <img src="./img/icon.png" alt="" class="nav-logo-mg">
+            </a>
+
+            <div class="nav-manu" id="navManu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="shop.html" class="nav-link active-link">Shop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link active-link">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./blog.html" class="nav-link active-link">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./login.html" class="nav-link active-link">Login</a>
+                    </li>
+                </ul>
+
+                <div class="header-search">
+                    <input type="text" placeholder="   search for items..." class="from-input">
+
+                    <button class="search-btn">
+                        <img src="./img/search.png" alt="">
+                    </button>
+                </div>
+            </div>
+        
+
+            <div class="header-user-actions">
+                <a href="wishlist.html" class="header-action-btn">
+                    <img src="./img/hart.png" alt="">
+                    <span class="count">3</span>
+                </a>
+
+                <a href="cart.html" class="header-action-btn">
+                    <img src="./img/shopt.png" alt="">
+                    <span class="count">3</span>
+                </a>
+            </div>
+        </nav>    
+    </header>
+<!-- Selected Product Quantity -->
+    <section id="cart" class="container mx-auto my-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        
+        <div class="bg-emerald-400 p-4 mx-4 shadow-lg">
+            <h3 class="text-2xl font-bold mb-4">Shop prosuct</h3>
+            <div class="flex justify-between items-center">
+                <span>Product quntity</span>
+                <span id="selected-quantity">0</span>
+            </div>
+        </div>
+
+    
+        <div class="bg-emerald-400 p-4 pt-6 shadow-lg mx-4">
+            <div class="flex justify-between">
+                <h3 class="text-xl font-bold">Total Price</h3>
+                <p class="text-xl font-semibold">$<span id="total-price">0.00</span></p>
+            </div>
+            <div class="flex items-center justify-end">
+                <button id="checkout-button" class="bg-blue-600 text-white px-4 py-2 mt-4">Confarm</button>
+            </div>
+        </div>
+        
+    </section>
+    
+
+    <!-- product -->
+    <div class="product-section py-12 bg-gray-100">
+        <h1 class="text-sky-600  mb-10 text-5xl font-bold text-center  ">Our products</h1>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Product Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Product Card 1 -->
+            <div class="bg-slate-400 p-6 rounded-lg shadow-lg">
+              <img src="./img/russia.jpeg" alt="Product 1" class="w-full h-48 object-cover rounded-md mb-4">
+              <h4 class="text-xl font-semibold mb-2">S-400 misille</h4>
+              <p class="text-gray-600 mb-4">The most up-to-date version's missiles can travel 400km (250 miles).</p>
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-bold">$1.25B</span>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Shop Now</button>
+              </div>
+            </div>
+      
+            <!-- Product Card 2 -->
+            <div class="bg-slate-400 p-6 rounded-lg shadow-lg">
+              <img src="./img/kamikazi.jpeg" alt="Product 2" class="w-full h-48 object-cover rounded-md mb-4">
+              <h4 class="text-xl font-semibold mb-2">kamiKazi Drone</h4>
+              <p class="text-gray-600 mb-4">A loitering munition, also known as a suicide drone, kamikaze drone, or exploding drone.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-bold">$1.50M</span>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Shop Now</button>
+              </div>
+            </div>
+      
+            <!-- Product Card 3 -->
+            <div class="bg-slate-400 p-6 rounded-lg shadow-lg">
+              <img src="./img/f16zet.jpeg" alt="Product 3" class="w-full h-48 object-cover rounded-md mb-4">
+              <h4 class="text-xl font-semibold mb-2">F-16 fighter</h4>
+              <p class="text-gray-600 mb-4">  F-16 (the Block 70/72)is the most advanced 4th generation fighter ever built.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-bold">$30.00M</span>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Shop Now</button>
+              </div>
+            </div>
+      
+            <!-- Product Card 4 -->
+            <div class="bg-slate-400 p-6 rounded-lg shadow-lg">
+              <img src="./img/nuclearboomb.jpeg" alt="Product 4" class="w-full h-48 object-cover rounded-md mb-4">
+              <h4 class="text-xl font-semibold mb-2">NuclearBoomb</h4>
+              <p class="text-gray-600 mb-4">A nuclear weapon is an explosive device that derives its destructive force.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-bold">$28.00B</span>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Shop Now</button>
+              </div>
+            </div>
+      
+            <!-- Product Card 5 -->
+            <div class="bg-slate-400 p-6 rounded-lg shadow-lg">
+              <img src="./img/Mk46.jpeg" alt="Product 5" class="w-full h-48 object-cover rounded-md mb-4">
+              <h4 class="text-xl font-semibold mb-2">MK-46</h4>
+              <p class="text-gray-600 mb-4">The MK46 30mm Naval Weapon System is an all-weather, day/night, fully stabilized weapon system.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-bold">$379.99</span>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Shop Now</button>
+              </div>
+            </div>
+      
+            <!-- Product Card 6 -->
+            <div class="bg-slate-400 p-6 rounded-lg shadow-lg">
+              <img src="./img/M240.jpeg" alt="Product 6" class="w-full h-48 object-cover rounded-md mb-4">
+              <h4 class="text-xl font-semibold mb-2">M240 gun</h4>
+              <p class="text-gray-600 mb-4">The M240B machine gun is a belt-fed, air-cooled, gas-operated, fully automatic machine gun.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-bold">$6600.00</span>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Shop Now</button>
+              </div>
+            </div>
+      
+            <!-- Product Card 7 -->
+            <div class="bg-slate-400 p-6 rounded-lg shadow-lg">
+              <img src="./img/chainbullet.jpeg" alt="Product 7" class="w-full h-48 object-cover rounded-md mb-4">
+              <h4 class="text-xl font-semibold mb-2">Chain Bullet</h4>
+              <p class="text-gray-600 mb-4">Chain and Sprocket kit for Bullet Classic 350CC - KIT BS 244.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-bold">$350.00</span>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Shop Now</button>
+              </div>
+            </div>
+      
+            <!-- Product Card 8 -->
+            <div class="bg-slate-400 p-6 rounded-lg shadow-lg">
+              <img src="./img/tank.png" alt="Product 8" class="w-full h-48 object-cover rounded-md mb-4">
+              <h4 class="text-xl font-semibold mb-2">T-90M</h4>
+              <p class="text-gray-600 mb-4">main battle tank (MBT) based on the Armata Universal Combat Platform. T-14 Armata.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-bold">$4.5M</span>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Shop Now</button>
+              </div>
+            </div>
+      
+            <!-- Product Card 9 -->
+            <div class="bg-slate-400 p-6 rounded-lg shadow-lg">
+              <img src="./img/truck.png" alt="Product 9" class="w-full h-48 object-cover rounded-md mb-4">
+              <h4 class="text-xl font-semibold mb-2">Military Truck</h4>
+              <p class="text-gray-600 mb-4"> military heavy truck. The basic cargo versions were designed to transport.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-bold">$0.50M</span>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Shop Now</button>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      
+    
+
+    <!-- footer -->
+
+    <footer class="bg-gray-800 text-white py-10 my-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Footer Top: Links and Info -->
+          <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- About Us -->
+            <div>
+              <h4 class="text-xl font-semibold mb-4">About Us</h4>
+              <p class="text-gray-400">We are a company committed to delivering the best services and products to our customers.</p>
+            </div>
+      
+            <!-- Quick Links -->
+            <div>
+              <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+              <ul class="space-y-2">
+                <li><a href="#" class="hover:underline">Home</a></li>
+                <li><a href="#" class="hover:underline">Shop</a></li>
+                <li><a href="#" class="hover:underline">About</a></li>
+                <li><a href="#" class="hover:underline">Blog</a></li>
+                <li><a href="#" class="hover:underline">login</a></li>
+              </ul>
+            </div>
+      
+            <!-- Support -->
+            <div>
+              <h4 class="text-xl font-semibold mb-4">Support</h4>
+              <ul class="space-y-2">
+                <li><a href="#" class="hover:underline">FAQ</a></li>
+                <li><a href="#" class="hover:underline">Help Center</a></li>
+                <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                <li><a href="#" class="hover:underline">Terms of Service</a></li>
+              </ul>
+            </div>
+      
+            <!-- Follow Us -->
+            <div>
+              <h4 class="text-xl font-semibold mb-4">Follow Us</h4>
+              <div class="flex space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Footer Bottom: Copyright -->
+          <div class="mt-10 border-t border-gray-700 pt-6 text-center">
+            <p class="text-gray-400">&copy; World Defence. All rights reserved.</p>
+          </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" onclick="scrollToTop()" class="fixed bottom-8 right-8 bg-blue-600 text-white p-4 rounded-full shadow-lg hidden hover:bg-blue-700 transition duration-300">
+    <i class="fa-solid fa-circle-arrow-up"></i>
+  </button>
+
+  <script>
+    // Function to scroll to top
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Show button when scrolled down
+    window.onscroll = function () {
+      const scrollTopBtn = document.getElementById('scrollTopBtn');
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollTopBtn.classList.remove('hidden');
+      } else {
+        scrollTopBtn.classList.add('hidden');
+      }
+    };
+  </script>
+
+
+    
+    
+    
+
+    <!-- main js -->
+    <script src=""></script>
+</body>
+</html>
